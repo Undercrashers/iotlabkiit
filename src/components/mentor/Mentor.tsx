@@ -22,6 +22,52 @@ export interface Mentor {
   };
 }
 
+function MentorCard({ mentor }: { mentor: Mentor | null }): React.JSX.Element {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      className="group relative flex justify-center"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Card
+        className="w-full max-w-[240px] aspect-[3/4] cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105"
+        padding="0"
+      >
+        <div className="relative h-full w-full">
+          <Image
+            src={mentor?.avatar?.url || "/images/ayush.png"}
+            alt={mentor?.name || "Mentor"}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <h3 className="mb-1 text-center text-lg font-bold">
+              {mentor?.name || "Sankalp Nayak"}
+            </h3>
+          </div>
+        </div>
+      </Card>
+
+      <div
+        className={`absolute -bottom-6 left-1/2 flex -translate-x-1/2 gap-3 transition-all duration-300 ${isHovered ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
+          }`}
+      >
+        {mentor?.email && (
+          <a
+            href={`mailto:${mentor.email}`}
+            className="bg-team-medium-blue/90 rounded-full p-2 shadow-lg backdrop-blur-sm transition-colors duration-200 hover:bg-team-accent-blue/90"
+          >
+            <Mail className="h-4 w-4 text-white" />
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Mentor(): React.JSX.Element {
   const [mentor, setMentor] = useState<Mentor | null>(null);
 
@@ -33,51 +79,6 @@ export default function Mentor(): React.JSX.Element {
     fetchData();
   }, []);
 
-  const MentorCard = () => {
-    const [isHovered, setIsHovered] = useState(false);
-
-    return (
-      <div className="relative group flex justify-center"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}>
-        <Card
-          className={`w-full max-w-[240px] aspect-[3/4] transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden`}
-
-          padding="0"
-        >
-          <div className="relative w-full h-full">
-            <Image
-              src={mentor?.avatar?.url || "/images/ayush.png"}
-              alt={mentor?.name || "Mentor"}
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="text-lg font-bold mb-1 text-center">
-                {mentor?.name || "Sankalp Nayak"}
-              </h3>
-            </div>
-          </div>
-        </Card>
-
-        <div
-          className={`absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 transition-all duration-300 ${isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-            }`}
-        >
-          {mentor?.email && (
-            <a
-              href={`mailto:${mentor?.email}`}
-              className="bg-team-medium-blue/90 backdrop-blur-sm p-2 rounded-full hover:bg-team-accent-blue/90 transition-colors duration-200 shadow-lg"
-            >
-              <Mail className="w-4 h-4 text-white" />
-            </a>
-          )}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <section className="text-white px-10">
       <div className="max-w-7xl mx-auto py-10 flex flex-col gap-8 items-center justify-center">
@@ -88,7 +89,7 @@ export default function Mentor(): React.JSX.Element {
         </p>
       </div>
       <div className="max-w-7xl mx-auto pb-10">
-        <MentorCard />
+        <MentorCard mentor={mentor} />
       </div>
     </section>
   );
