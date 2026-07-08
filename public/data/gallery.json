@@ -1,0 +1,26 @@
+    [
+    {
+        "id": 1,
+        "eventName": "Encode",
+        "date": "February, 2025",
+        "coverImage": "/images/ENCODE-4.0/2.JPG",
+        "photos": 12,
+        "videos": 7
+    },
+    {
+        "id": 2,
+        "eventName": "Phantom Flag",
+        "date": "December, 2024",
+        "coverImage": "/images/Pokedev/4.JPG",
+        "photos": 19,
+        "videos": 7
+    },
+    {
+        "id": 3,
+        "eventName": "Innovance 3.0",
+        "date": "November, 2024",
+        "coverImage": "/images/INNOVENCE-3.0/4.JPG",
+        "photos": 10,
+        "videos": 5
+    }
+    ]

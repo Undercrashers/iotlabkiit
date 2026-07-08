@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "AYUSH DAS",
+    "role": "Lab Coordinator",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/ayush",
+    "linkedin": "https://linkedin.com/in/ayush",
+    "instagram": "https://instagram.com/ayush"
+  },
+  {
+    "id": 2,
+    "name": "SARAH JOHNSON",
+    "role": "Event Coordinator",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/sarah",
+    "linkedin": "https://linkedin.com/in/sarah",
+    "instagram": "https://instagram.com/sarah"
+  },
+  {
+    "id": 3,
+    "name": "MICHAEL CHEN",
+    "role": "Tech Coordinator",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/michael",
+    "linkedin": "https://linkedin.com/in/michael",
+    "instagram": "https://instagram.com/michael"
+  },
+  {
+    "id": 4,
+    "name": "EMILY RODRIGUEZ",
+    "role": "Design Coordinator",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/emily",
+    "linkedin": "https://linkedin.com/in/emily",
+    "instagram": "https://instagram.com/emily"
+  },
+  {
+    "id": 5,
+    "name": "DAVID WILSON",
+    "role": "Research Coordinator",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/david",
+    "linkedin": "https://linkedin.com/in/david",
+    "instagram": "https://instagram.com/david"
+  }
+]

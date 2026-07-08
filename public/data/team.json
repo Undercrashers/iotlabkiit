@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "position": "Lead Developer",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  {
+    "id": 2,
+    "name": "Maria Garcia",
+    "position": "UI/UX Designer",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": null
+  },
+  {
+    "id": 3,
+    "name": "James Smith",
+    "position": "Project Manager",
+    "image": "/images/ayush.png",
+    "github": null,
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  {
+    "id": 4,
+    "name": "Patricia Williams",
+    "position": "Frontend Developer",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  {
+    "id": 5,
+    "name": "Robert Brown",
+    "position": "Backend Developer",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": null
+  },
+  {
+    "id": 6,
+    "name": "Jennifer Jones",
+    "position": "DevOps Engineer",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  {
+    "id": 7,
+    "name": "Michael Miller",
+    "position": "QA Tester",
+    "image": "/images/ayush.png",
+    "github": null,
+    "linkedin": "https://linkedin.com",
+    "instagram": null
+  },
+  {
+    "id": 8,
+    "name": "Linda Davis",
+    "position": "Data Scientist",
+    "image": "/images/ayush.png",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  {
+    "id": 9,
+    "name": "William Wilson",
+    "position": "Systems Analyst",
+    "image": "/images/ayush.png",
+    "github": null,
+    "linkedin": "https://linkedin.com",
+    "instagram": null
+  },
+  {
+    "id": 10,
+    "name": "Elizabeth Taylor",
+    "position": "Content Strategist",
+    "image": "/images/ayush.png",
+    "github": null,
+    "linkedin": "https://linkedin.com",
+    "instagram": null
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ayush Kumar",
+    "role": "Technical Lead",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/ayush",
+    "linkedin": "https://linkedin.com/in/ayush",
+    "instagram": "https://instagram.com/ayush"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "role": "Design Lead",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/sarah",
+    "linkedin": "https://linkedin.com/in/sarah",
+    "instagram": "https://instagram.com/sarah"
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "role": "Backend Lead",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/michael",
+    "linkedin": "https://linkedin.com/in/michael",
+    "instagram": "https://instagram.com/michael"
+  },
+  {
+    "id": 4,
+    "name": "Emily Rodriguez",
+    "role": "Frontend Lead",
+    "image": "/images/ayush.png",
+    "github": "https://github.com/emily",
+    "linkedin": "https://linkedin.com/in/emily",
+    "instagram": "https://instagram.com/emily"
+  }
+]
